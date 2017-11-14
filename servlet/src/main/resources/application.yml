@@ -1,5 +1,21 @@
-charon.mappings:
-    -
-        name: sample mapping
-        path: /demo-proxy/endpoint
-        destinations: https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/
+#charon:
+#  mappings:
+#    -
+#        name: sample mapping
+#        path: /figis
+#        destinations: http://hqlprfigis1/figis/
+#  metrics:
+#          enabled: true
+#  tracing:
+#        enabled: true
+
+# Proxy configuration
+zuul:
+  routes:
+    config:
+      path: /figis/qrcode/**
+      url: http://www.fao.org/figis/qrcode/**
+
+ribbon:
+  eureka:
+    enabled: false
