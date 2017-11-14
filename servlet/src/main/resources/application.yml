@@ -1,0 +1,5 @@
+charon.mappings:
+    -
+        name: sample mapping
+        path: /demo-proxy/endpoint
+        destinations: https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/
